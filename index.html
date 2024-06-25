@@ -9,47 +9,266 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-        <div class="container">
-            <div class="header-menu">
-                <div class="header-logo">
-                    <a class="logo-link" href="#">
-                        <img src="img/LOGO.png" alt="логотип">
-                    </a>
-                </div>
-                <nav class="nav-menu">
-                    <ul class="menu-list">
-                        <li class="menu-item"><a href="#" class="menu-link">Авто в наличии</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Почему мы</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Кейсы</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">FAQ</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <button class="button header-button">Оставить заявку</button>
-            </div>
+      <div class="container">
+        <div class="header-menu">
+          <div class="header-logo">
+            <a class="logo-link" href="#">
+              <img src="img/LOGO.png" alt="логотип" />
+            </a>
+          </div>
+          <nav class="nav-menu">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Авто в наличии</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Почему мы</a>
+              </li>
+              <li class="menu-item"><a href="#" class="menu-link">Кейсы</a></li>
+              <li class="menu-item"><a href="#" class="menu-link">FAQ</a></li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button header-button">Оставить заявку</button>
         </div>
+      </div>
     </header>
     <section class="section section-banner">
-        <div class="container">
-            <p class="banner-lg-text">Купим и доставим</p>
-            <p class="banner-lg-text yellow">Новый автомобиль</p>
-            <p class="banner-lg-text">из Китая в Россию</p>
-            <div class="banner-img">
-                <a href="#">
-                    <img src="img/banner.png" alt="баннер">
-                </a>
-                <a class="banner-sm-text yellow"><span>Выбрать авто</span></a>
-                <span class="banner-sm-text black">Безрисковая растаможка и пожизненная поддержка запчастями</span>
-                <span class="banner-sm-text grey">Доступ ко всем эксклюзивным площадкам Китая</span>
-            </div>
+      <div class="container">
+        <p class="banner-lg-text">Купим и доставим</p>
+        <p class="banner-lg-text yellow">Новый автомобиль</p>
+        <p class="banner-lg-text">из Китая в Россию</p>
+        <div class="banner-img">
+          <a href="#">
+            <img src="img/banner.png" alt="баннер" />
+          </a>
+          <a class="banner-sm-text yellow"><span>Выбрать авто</span></a>
+          <span class="banner-sm-text black"
+            >Безрисковая растаможка и пожизненная поддержка запчастями</span
+          >
+          <span class="banner-sm-text grey"
+            >Доступ ко всем эксклюзивным площадкам Китая</span
+          >
         </div>
+      </div>
     </section>
-    
+    <section class="real-cars">
+      <p class="block-title">Автомобили в наличии</p>
+      <div class="container">
+        <div class="cars-tabs-buttons">
+          <button class="cars-button active" data-tab="tab-1">Новые</button>
+          <button class="cars-button" data-tab="tab-2">Б/У</button>
+        </div>
+        <div class="cars-tabs">
+          <div class="cars-card item-tab-1">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="owl-carousel owl-cars owl-theme owl-drag">
+                  <a class="car-img-link" href="#">
+                    <img src="img/car.png" alt="автомобиль" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-center"
+              >
+                <div>
+                  <a href="#"><p class="options-title">Haval F7</p></a>
+                  <div class="option-item">
+                    <p class="option option-name">Год выпуска:</p>
+                    <p class="option option-value">2020</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Пробег:</p>
+                    <p class="option option-value">37 000 км</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Коробка:</p>
+                    <p class="option option-value">Роботизированная</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Двигатель:</p>
+                    <p class="option option-value">1.5л / 169 л.с. / Бензин</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-end"
+              >
+                <div class="price-wrap">
+                  <p class="car-price">1 700 200 &#8381;</p>
+                  <p class="car-price-desc">
+                    примерная стоимость по курсу сегодняшнего дня
+                  </p>
+                  <a class="car-about-link" href="#"
+                    ><span class="car-about-full">Подробнее</span></a
+                  >
+                  <button class="button button-car-order">Заказать авто</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-card item-tab-1">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="owl-carousel owl-cars owl-theme owl-drag">
+                  <a class="car-img-link" href="#">
+                    <img src="img/car.png" alt="автомобиль" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-center"
+              >
+                <div>
+                  <a href="#"><p class="options-title">Haval F7</p></a>
+                  <div class="option-item">
+                    <p class="option option-name">Год выпуска:</p>
+                    <p class="option option-value">2020</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Пробег:</p>
+                    <p class="option option-value">37 000 км</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Коробка:</p>
+                    <p class="option option-value">Роботизированная</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Двигатель:</p>
+                    <p class="option option-value">1.5л / 169 л.с. / Бензин</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-end"
+              >
+                <div class="price-wrap">
+                  <p class="car-price">1 700 200 &#8381;</p>
+                  <p class="car-price-desc">
+                    примерная стоимость по курсу сегодняшнего дня
+                  </p>
+                  <a class="car-about-link" href="#"
+                    ><span class="car-about-full">Подробнее</span></a
+                  >
+                  <button class="button button-car-order">Заказать авто</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-card item-tab-1">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="owl-carousel owl-cars owl-theme owl-drag">
+                  <a class="car-img-link" href="#">
+                    <img src="img/car.png" alt="автомобиль" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-center"
+              >
+                <div>
+                  <a href="#"><p class="options-title">Haval F7</p></a>
+                  <div class="option-item">
+                    <p class="option option-name">Год выпуска:</p>
+                    <p class="option option-value">2020</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Пробег:</p>
+                    <p class="option option-value">37 000 км</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Коробка:</p>
+                    <p class="option option-value">Роботизированная</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Двигатель:</p>
+                    <p class="option option-value">1.5л / 169 л.с. / Бензин</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-end"
+              >
+                <div class="price-wrap">
+                  <p class="car-price">1 700 200 &#8381;</p>
+                  <p class="car-price-desc">
+                    примерная стоимость по курсу сегодняшнего дня
+                  </p>
+                  <a class="car-about-link" href="#"
+                    ><span class="car-about-full">Подробнее</span></a
+                  >
+                  <button class="button button-car-order">Заказать авто</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cars-card item-tab-1">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="owl-carousel owl-cars owl-theme owl-drag">
+                  <a class="car-img-link" href="#">
+                    <img src="img/car.png" alt="автомобиль" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-center"
+              >
+                <div>
+                  <a href="#"><p class="options-title">Haval F7</p></a>
+                  <div class="option-item">
+                    <p class="option option-name">Год выпуска:</p>
+                    <p class="option option-value">2020</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Пробег:</p>
+                    <p class="option option-value">37 000 км</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Коробка:</p>
+                    <p class="option option-value">Роботизированная</p>
+                  </div>
+                  <div class="option-item">
+                    <p class="option option-name">Двигатель:</p>
+                    <p class="option option-value">1.5л / 169 л.с. / Бензин</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex align-items-center justify-content-end"
+              >
+                <div class="price-wrap">
+                  <p class="car-price">1 700 200 &#8381;</p>
+                  <p class="car-price-desc">
+                    примерная стоимость по курсу сегодняшнего дня
+                  </p>
+                  <a class="car-about-link" href="#"
+                    ><span class="car-about-full">Подробнее</span></a
+                  >
+                  <button class="button button-car-order">Заказать авто</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

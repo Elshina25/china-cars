@@ -34,6 +34,14 @@ section {
     padding-top: 50px;
 }
 
+.block-title {
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
 .header .header-menu {
     display: flex;
     justify-content: space-evenly;
@@ -97,6 +105,7 @@ header .header-menu .nav-menu .menu-list {
 
 .section-banner .banner-img {
     position: relative;
+    margin-bottom: 70px;
 }
 
 .section-banner .banner-lg-text:nth-child(3) {
@@ -153,3 +162,118 @@ header .header-menu .nav-menu .menu-list {
 }
 
 /* end banner */
+
+/* cars in sale*/
+
+.real-cars .cars-tabs-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.real-cars .cars-tabs-buttons .cars-button {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: #000;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.real-cars .cars-tabs-buttons .cars-button:first-child {
+    margin-right: 30px;
+}
+
+.real-cars .cars-tabs-buttons .cars-button.active {
+    border-bottom: 1px solid #000;
+    color: #000;
+    opacity: 1;
+}
+
+.real-cars .cars-tabs .cars-card {
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.real-cars .cars-tabs .cars-card .options-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: #000;
+}
+
+.real-cars .cars-tabs .cars-card .option-item {
+    display: flex;
+}
+
+.real-cars .cars-tabs .cars-card .option-item .option {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000;
+}
+
+.real-cars .cars-tabs .cars-card .option-item .option-value {
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap .car-price {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000;
+    text-align: right;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap .car-price-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.6;
+    text-align: right;
+    max-width: 70%;
+    margin-bottom: 15px;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap .car-about-link {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap .car-about-link .car-about-full {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.real-cars .cars-tabs .cars-card .price-wrap .button-car-order {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fad14d;
+    border: none;
+    width: 90%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+
+
+
+/* end cars in sale*/
