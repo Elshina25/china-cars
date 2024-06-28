@@ -32,6 +32,7 @@ img {
 
 section {
     padding-top: 50px;
+    margin-bottom: 70px;
 }
 
 .block-title {
@@ -296,10 +297,6 @@ header .header-menu .nav-menu .menu-list {
 
 /* infographics about us */
 
-.about-infographics {
-    margin-bottom: 50px;
-}
-
 .about-infographics .about-item {
     background-color: #f3f3f3;
     padding: 30px;
@@ -307,7 +304,7 @@ header .header-menu .nav-menu .menu-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     flex: 1;
     aspect-ratio: 1;
     max-height: 300px;
@@ -404,10 +401,18 @@ header .header-menu .nav-menu .menu-list {
 .request-price .request-video-block {
     flex: 1;
     display: flex;
-    position: relative;
 }
 
-.request-price .request-video-block::after {
+.request-price .request-video-block .video-car {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.request-price .request-video-block .video-car::after {
     content: "";
     position: absolute;
     background-image: url('../img/Group\ 17.png');
@@ -418,10 +423,6 @@ header .header-menu .nav-menu .menu-list {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.request-price .request-video-block img {
-    width: 100%;
 }
 
 .request-price .request-video-block p {
@@ -438,3 +439,169 @@ header .header-menu .nav-menu .menu-list {
 }
 
 /* end request price car  */
+
+/* video reviews */
+
+.video-reviews .block-description {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.video-reviews .video-review {
+    margin-bottom: 30px;
+    display: flex;
+    flex: 1;
+}
+
+.video-reviews .video-review div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    flex: 1;
+}
+
+/* end video reviews */
+
+/* FAQ block*/
+
+.faq .ask-question-wrap .ask {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 260px;
+    padding-top: 30px;
+}
+
+.faq .ask-question-wrap {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 40px;
+    flex: 1;
+}
+
+.faq .ask-question-wrap .block-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.faq .ask-question-wrap .ask-question {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #1a1a1a;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #fad14d;
+    border: none;
+    padding: 25px;
+}
+
+.faq .ask-question-wrap .ask-question:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.faq .faq-block {
+    background-color: #fad14d;
+    border-radius: 20px;
+    padding: 40px;
+    flex: 1;
+}
+
+.faq .faq-block .faq-item {
+    border-radius: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .faq-block .faq-item .faq-question {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    position: relative;
+    padding: 30px 40px 30px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.faq .faq-block .faq-item .faq-answer {
+    display: none;
+}
+
+.faq .faq-block .faq-item .faq-answer.active {
+    display: block;
+    padding: 30px 15px;
+    background-color: #ededed;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+}
+
+.faq .faq-block .faq-item .faq-question::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/plus\ 1.png");
+    background-repeat: no-repeat;
+    top: 22px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.faq .faq-block .faq-item .faq-question.active::after {
+    transform: rotate(45deg);
+}
+
+/* end FAQ block*/
+
+/* request price second-block */
+
+.request-price.block-two {
+    background-color: #fad14d;
+    border-radius: 20px;
+}
+
+.request-price.block-two .sale-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 75px 50px;
+}
+
+.request-price.block-two .sale-stat .stat-number {
+    font-weight: 600;
+    font-size: 200px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.request-price.block-two .sale-stat .stat-description {
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;    
+    width: 75%;
+}
+
+
+
+/* end request price second-block */
