@@ -52,19 +52,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-   //добавления обработчика события клика по блоку FAQ
-   const faqBlock = document.querySelector('.faq-block');
-   faqBlock.addEventListener('click', (e) => {
-    const target = e.target;
-    if (target.classList.contains('faq-question')) {
-        const answerId = target.getAttribute('data-answer-id');
-        const answerElem = document.querySelector(`#${answerId}`)
+    //добавления обработчика события клика по блоку FAQ
+    const faqBlock = document.querySelector('.faq-block');
+    faqBlock.addEventListener('click', (e) => {
+        const target = e.target;
+        if (target.classList.contains('faq-question')) {
+            const answerId = target.getAttribute('data-answer-id');
+            const answerElem = document.querySelector(`#${answerId}`)
 
-        if (answerElem) {
-            console.log(answerElem);
-            answerElem.classList.toggle('active');
-            target.classList.toggle('active');
-        }
-    };
-   });
+            if (answerElem) {
+                console.log(answerElem);
+                answerElem.classList.toggle('active');
+                target.classList.toggle('active');
+            }
+        };
+    });
+});
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [55.776472, 37.632880],
+        zoom: 14
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        }, {
+            preset: 'islands#greenDotIconWithCaption',
+            iconColor: 'red'
+        });
+
+
+    myMap.geoObjects
+        .add(myPlacemark);
 });
