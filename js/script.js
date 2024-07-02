@@ -67,7 +67,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
     });
+
+    const callPopup = Array.from(document.querySelectorAll('.call-popup'));
+    const formPopup = document.querySelector('.popup-form');
+    callPopup.forEach(el => {
+        el.addEventListener('click', () => {
+            formPopup.style.display = 'flex';
+        });
+    });
+
+    const close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+        formPopup.style.display = 'none';
+        if (formPopup.querySelector('input[type="checkbox"]').checked) {
+            formPopup.querySelector('input[type="checkbox"]').checked = false;
+        }
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === formPopup) {
+            formPopup.style.display = 'none';
+            if (formPopup.querySelector('input[type="checkbox"]').checked) {
+                formPopup.querySelector('input[type="checkbox"]').checked = false;
+            }
+        }
+    });
+
 });
+
+
 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {

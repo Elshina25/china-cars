@@ -40,7 +40,7 @@
               </li>
             </ul>
           </nav>
-          <button class="button header-button">Оставить заявку</button>
+          <button class="button header-button call-popup">Оставить заявку</button>
         </div>
       </div>
     </header>
@@ -53,7 +53,7 @@
           <a href="#">
             <img src="img/banner.png" alt="баннер" />
           </a>
-          <a class="banner-sm-text yellow"><span>Выбрать авто</span></a>
+          <a href="#" class="banner-sm-text yellow"><span>Выбрать авто</span></a>
           <span class="banner-sm-text black"
             >Безрисковая растаможка и пожизненная поддержка запчастями</span
           >
@@ -120,7 +120,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -226,7 +226,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -279,7 +279,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -334,7 +334,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -387,7 +387,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -440,7 +440,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -493,7 +493,7 @@
                     <a class="car-about-link" href="#"
                       ><span class="car-about-full">Подробнее</span></a
                     >
-                    <button class="button button-car-order">Заказать авто</button>
+                    <button class="button button-car-order call-popup">Заказать авто</button>
                   </div>
                 </div>
               </div>
@@ -552,10 +552,11 @@
               <div class="request-form-wrap">
                 <p class="request-form-header">Оставьте заявку на расчет стоимости автомобиля</p>
                 <p class="request-form-desc">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
-                <input class="input request-form-input" name="name" type="text" placeholder="Имя">
-                <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона">
+                <input class="input request-form-input" name="name" type="text" placeholder="Имя" required>
+                <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона" required>
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
                 <button class="button request-send-button">Оставить заявку</button>
-                <p class="agreement-personal-data">Нажимая на кнопку, вы даете свое согласие на обработку ваших персональных данных</p>
               </div>
             </form>
           </div>
@@ -604,7 +605,7 @@
             <div class="ask-question-wrap">
               <p class="block-title ask">Отвечаем на ваши вопросы</p>
               <p class="block-description">Если не нашли ответа на свой вопрос, то оставьте заявку, и мы ответим вам в ближайшее время.</p>
-              <button class="ask-question">Задать вопрос</button>
+              <button class="button ask-question call-popup">Задать вопрос</button>
             </div>
           </div>
           <div class="col-lg-7 d-flex">
@@ -656,10 +657,11 @@
               <div class="request-form-wrap">
                 <p class="request-form-header">Оставьте заявку на расчет стоимости автомобиля</p>
                 <p class="request-form-desc">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
-                <input class="input request-form-input" name="name" type="text" placeholder="Имя">
-                <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона">
+                <input class="input request-form-input" name="name" type="text" placeholder="Имя" required>
+                <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона" required>
+                <input type="checkbox" id="checkbox2">
+                <label for="checkbox2"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
                 <button class="button request-send-button">Оставить заявку</button>
-                <p class="agreement-personal-data">Нажимая на кнопку, вы даете свое согласие на обработку ваших персональных данных</p>
               </div>
             </form>
           </div>
@@ -778,6 +780,20 @@
         </div>
       </div>
     </section>
+    <div class="popup-form">
+      <form class="form request-form">
+        <div class="form-wrap">
+          <span class="close"></span>
+          <p class="form-title">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
+          <input class="input form-input" name="name" type="text" placeholder="Имя" required>
+          <input type="text" class="input form-input" name="phone" placeholder="Номер телефона" required>
+          <input type="checkbox" id="checkbox3">
+          <label for="checkbox3"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
+          <button class="button send-button">Оставить заявку</button>
+        </div>
+        <input type="hidden" name="form-name">
+      </form>
+    </div>
 
 
 
