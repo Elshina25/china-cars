@@ -25,7 +25,12 @@
               <img src="img/LOGO.png" alt="логотип" />
             </a>
           </div>
-          <nav class="nav-menu">
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav-menu mobile-menu">
             <ul class="menu-list">
               <li class="menu-item">
                 <a href="#" class="menu-link">Авто в наличии</a>
@@ -551,12 +556,12 @@
             <form class="form request-form">
               <div class="request-form-wrap">
                 <p class="request-form-header">Оставьте заявку на расчет стоимости автомобиля</p>
-                <p class="request-form-desc">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
+                <p class="request-form-desc">Оставьте свои контактные данные, и наш менеджер свяжется с вами в течение 30 минут.</p>
                 <input class="input request-form-input" name="name" type="text" placeholder="Имя" required>
                 <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона" required>
-                <input type="checkbox" id="checkbox1">
+                <input type="checkbox" id="checkbox1" required>
                 <label for="checkbox1"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
-                <button class="button request-send-button">Оставить заявку</button>
+                <button class="button form-button request-send-button">Оставить заявку</button>
               </div>
             </form>
           </div>
@@ -659,9 +664,9 @@
                 <p class="request-form-desc">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
                 <input class="input request-form-input" name="name" type="text" placeholder="Имя" required>
                 <input type="text" class="input request-form-input" name="phone" placeholder="Номер телефона" required>
-                <input type="checkbox" id="checkbox2">
+                <input type="checkbox" id="checkbox2" required>
                 <label for="checkbox2"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
-                <button class="button request-send-button">Оставить заявку</button>
+                <button class="button form-button request-send-button">Оставить заявку</button>
               </div>
             </form>
           </div>
@@ -787,9 +792,9 @@
           <p class="form-title">Оставьте свои контактные данные, и нам менеджер свяжется с вами в течение 30 минут.</p>
           <input class="input form-input" name="name" type="text" placeholder="Имя" required>
           <input type="text" class="input form-input" name="phone" placeholder="Номер телефона" required>
-          <input type="checkbox" id="checkbox3">
+          <input type="checkbox" id="checkbox3" required>
           <label for="checkbox3"><p class="agreement-personal">Даю свое согласие на обработку ваших <a href="#">персональных данных</a></p></label>
-          <button class="button send-button">Оставить заявку</button>
+          <button class="button form-button send-button">Оставить заявку</button>
         </div>
         <input type="hidden" name="form-name">
       </form>

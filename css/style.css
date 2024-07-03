@@ -62,22 +62,11 @@ input[type="checkbox"]:checked+label::after {
     border-width: 0 2px 2px 0;
 }
 
-
-
-
 .agreement-personal {
     font-size: 16px;
     font-weight: 400;
     color: #000;
 
-}
-
-/* header */
-
-.header {
-    padding-top: 30px;
-    max-width: 1069px;
-    margin: 0 auto;
 }
 
 section {
@@ -95,12 +84,28 @@ section {
     padding-bottom: 40px;
 }
 
+/* header */
+
+.header {
+    padding-top: 30px;
+    max-width: 1069px;
+    margin: 0 auto;
+}
+
 .header .header-menu {
     display: flex;
     justify-content: space-evenly;
     border-radius: 10px;
     background-color: #fad14d;
     padding: 10px;
+}
+
+.header .header-menu .header-logo {
+    margin-right: 265px;
+}
+
+.header .header-menu .buter-menu {
+    display: none;
 }
 
 .header .header-menu .header-logo {
@@ -113,7 +118,7 @@ section {
     align-content: center;
 }
 
-header .header-menu .nav-menu .menu-list {
+.header .header-menu .nav-menu .menu-list {
     display: flex;
 }
 
@@ -677,7 +682,7 @@ header .header-menu .nav-menu .menu-list {
     font-weight: 600;
     font-size: 30px;
     text-transform: uppercase;
-    color: #000;    
+    color: #000;
     width: 75%;
 }
 
@@ -889,7 +894,7 @@ header .header-menu .nav-menu .menu-list {
     height: 40px;
     transform: rotate(45deg);
 
-      /* content: '+';
+    /* content: '+';
     position: absolute;
     top: -10px;
     right: -10px;
@@ -927,3 +932,92 @@ header .header-menu .nav-menu .menu-list {
 }
 
 /* end popup */
+
+@media (max-width: 991px) {
+
+    .agreement-personal {
+        font-size: 14px;
+    }
+
+    section {
+        padding-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .block-title {
+        font-weight: 500;
+        font-size: 50px;
+        text-align: center;
+        color: #000;
+        width: 78%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .header {
+        max-width: 960px;
+        position: relative;
+    }
+
+    .header .header-menu {
+        padding: 20px;
+    }
+
+    .header .header-menu .header-logo {
+        margin-right: 265px;
+    }
+
+    .header .header-menu .burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 40px;
+        order: 2;
+    }
+
+    .header .header-menu .burger-menu span {
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+        margin: 5px 0;
+    }
+
+    .header .header-menu .mobile-menu {
+        display: none;
+    }
+
+    .header .header-menu .mobile-menu.active {
+        display: flex;
+        width: 40%;
+        background-color: #e1e0e0;
+        position: absolute;
+        top: 90%;
+        left: 45%;
+        margin-right: 0;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .header .header-menu .nav-menu .menu-list {
+        flex-direction: column;
+    }
+
+    .header .header-menu .nav-menu .menu-list .menu-item {
+        font-weight: 400;
+        font-size: 16px;
+        color: #242526;
+        margin-bottom: 40px;
+    }
+
+    .header .header-menu .nav-menu .menu-list .menu-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header .header-menu .nav-menu .menu-list .menu-item:nth-child(n+2) {
+        margin-left: 0;
+    }
+
+    .header .header-menu .nav-menu .menu-list .menu-item .menu-link {
+        font-size: 20px;
+    }
+}

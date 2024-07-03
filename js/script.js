@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
+    //открытие попапа при нажатии на кнопку его вызова
     const callPopup = Array.from(document.querySelectorAll('.call-popup'));
     const formPopup = document.querySelector('.popup-form');
     callPopup.forEach(el => {
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    //срабатывание кнопки закрытия попапа
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
         formPopup.style.display = 'none';
@@ -84,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //закрытие попапа при клике за пределами формы, сброс состояния чекед при закрытии попапа
     window.addEventListener('click', (e) => {
         if (e.target === formPopup) {
             formPopup.style.display = 'none';
@@ -93,6 +96,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //дизейбл кнопки отправки данных формы при пустых полях
+    const forms = Array.from(document.querySelectorAll('form'));
+    forms.forEach(el => {
+        const submitButton = el.querySelector('.form-button');
+
+        const validateForm = () => {
+            let isValid = true;
+            const requiredFields = Array.from(el.querySelectorAll('[required]'));
+            requiredFields.forEach(input => {
+                if (!input.value && input.type !== 'checkbox') {
+                    isValid = false;
+                } else if (input.type === 'checkbox' && !input.checked) {
+                    isValid = false;
+                }
+            });
+            submitButton.disabled = !isValid;
+            submitButton.style.backgroundColor = isValid ? '' : 'grey';
+        };
+
+
+        el.addEventListener('input', validateForm);
+        el.addEventListener('change', validateForm);
+        validateForm();
+    });
+
+    //открытие меню-бургера по клику на иконку
+    const burger = document.querySelector('.burger-menu');
+    const menuBlock = document.querySelector('.mobile-menu');
+    window.addEventListener('click', (e) => {
+        if (e.target === burger) {
+            menuBlock.classList.toggle('active');
+        } else if (!menuBlock.contains(e.target) && e.target !== burger) {
+            menuBlock.classList.remove('active');
+        }
+    });
 });
 
 
