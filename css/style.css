@@ -66,12 +66,16 @@ input[type="checkbox"]:checked+label::after {
     font-size: 16px;
     font-weight: 400;
     color: #000;
+}
 
+.agreement-personal a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 600;
 }
 
 section {
-    padding-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .block-title {
@@ -87,7 +91,7 @@ section {
 /* header */
 
 .header {
-    padding-top: 30px;
+    padding: 30px 0;
     max-width: 1069px;
     margin: 0 auto;
 }
@@ -297,6 +301,7 @@ section {
 
 .real-cars .cars-tabs .cars-card .option-item {
     display: flex;
+    flex-direction: column;
 }
 
 .real-cars .cars-tabs .cars-card .option-item .option {
@@ -468,16 +473,6 @@ section {
     color: #000;
 }
 
-/* .request-price .request-form .request-form-wrap .agreement-personal-data {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    text-align: center;
-    color: #000;
-    width: 50%;
-    margin: 0 auto;
-} */
-
 .request-price .request-video-block {
     flex: 1;
     display: flex;
@@ -504,10 +499,6 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* .request-price .request-video-block .video-car:hover::after {
-    opacity: 0.7;
-} */
 
 .request-price .request-video-block p {
     font-weight: 500;
@@ -825,11 +816,15 @@ section {
 
 .footer-contacts .footer-wrap .socials .soc-sign {
     background-color: #FAD14D;
-    margin-right: 30px;
     border-radius: 100%;
     padding: 35px;
     width: 29px;
     height: 29px;
+    flex: 1;
+}
+
+.footer-contacts .footer-wrap .socials .soc-sign:not(:last-child) {
+    margin-right: 30px;
 }
 
 .footer-contacts .footer-wrap .socials .soc-sign:hover {
@@ -874,16 +869,6 @@ section {
     position: relative;
 }
 
-/* /* .popup-form .request-form .form-wrap .close {
-    /* position: absolute;
-    right: 8px;
-    top: 8px;
-    font-size: 40px;
-    background-color: #fff;
-    border-radius: 100%;
-    width: 35px;
-    height: 35px; */
-
 .popup-form .request-form .form-wrap .close {
     position: absolute;
     background-image: url(../img/plus\ 1.png);
@@ -893,12 +878,6 @@ section {
     width: 40px;
     height: 40px;
     transform: rotate(45deg);
-
-    /* content: '+';
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 40px; */
 }
 
 .popup-form .request-form .form-wrap .form-title {
@@ -933,15 +912,140 @@ section {
 
 /* end popup */
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
+    input[type="checkbox"]:checked+label::after {
+        top: 25%;
+    }
 
+    .block-title {
+        font-size: 57px;
+    }
+
+    .header .header-menu .header-logo {
+        margin-right: 80px;
+    }
+
+    .header .header-menu .nav-menu {
+        margin-right: 80px;
+    }
+
+    .header .header-menu .nav-menu .menu-list .menu-item:nth-child(n+2) {
+        margin-left: 40px;
+    }
+
+    .section-banner .banner-lg-text {
+        font-size: 70px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.black {
+        top: -49px;
+        right: 28px;
+    }
+
+    .real-cars .cars-tabs .cars-card .option-item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .real-cars .cars-tabs .cars-card .option-item .option {
+        font-size: 20px;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-price {
+        font-size: 38px;
+    }
+
+    .about-infographics .about-item .about-info {
+        font-size: 18px;
+    }
+
+    .request-price .request-form .request-form-wrap {
+        padding: 30px;
+    }
+
+    .request-price .request-form .request-form-wrap .request-form-header {
+        font-size: 40px;
+    }
+
+    .request-price .request-form .request-form-wrap .request-form-desc {
+        font-size: 22px;
+    }
+
+    .video-reviews .block-description {
+        font-size: 25px;
+    }
+
+    .faq .ask-question-wrap {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .faq .ask-question-wrap .block-description {
+        font-size: 19px;
+    }
+
+    .faq .faq-block .faq-item .faq-question {
+        font-size: 18px;
+    }
+
+    .faq .faq-block .faq-item .faq-question::after {
+        right: 13px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-contacts .footer-wrap {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .footer-contacts .footer-wrap .footer-title {
+        font-size: 50px;
+    }
+
+    .footer-contacts .footer-wrap .footer-address a {
+        font-size: 18px;
+    }
+
+    .footer-contacts .footer-wrap .footer-phone a,
+    .footer-contacts .footer-wrap .footer-mail a {
+        font-size: 27px;
+    }
+
+    .footer-contacts .footer-wrap .socials .soc-sign:not(:last-child) {
+        margin-right: 11px;
+    }
+
+    .popup-form .request-form .form-wrap {
+        padding: 35px;
+    }
+
+    .popup-form .request-form .form-wrap .form-title {
+        font-size: 24px;
+    }
+
+    .popup-form .request-form .form-wrap .send-button {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 1129px) and (max-width: 1199px) {
+    input[type="checkbox"]:checked+label::after {
+        top: 41%;
+    }
+}
+
+@media (max-width: 991px) {
     .agreement-personal {
         font-size: 14px;
     }
 
     section {
-        padding-top: 40px;
-        margin-bottom: 50px;
+        padding-top: 20px;
+        margin-bottom: 40px;
     }
 
     .block-title {
@@ -957,10 +1061,6 @@ section {
     .header {
         max-width: 960px;
         position: relative;
-    }
-
-    .header .header-menu {
-        padding: 20px;
     }
 
     .header .header-menu .header-logo {
@@ -1019,5 +1119,112 @@ section {
 
     .header .header-menu .nav-menu .menu-list .menu-item .menu-link {
         font-size: 20px;
+    }
+
+    .section-banner .banner-lg-text {
+        font-size: 61px;
+    }
+
+    .section-banner .banner-lg-text.banner-lg-text.yellow {
+        font-size: 58px;
+    }
+
+    .section-banner .banner-sm-text {
+        font-size: 21px;
+    }
+
+    .section-banner .banner-lg-text:nth-child(3) {
+        margin-left: 177px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.yellow {
+        top: -73px;
+        left: 21px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.black {
+        max-width: 292px;
+        padding: 20px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.grey {
+        max-width: 217px;
+        padding: 20px;
+    }
+
+    .request-price .request-form .request-form-wrap {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .request-price .request-form .request-form-wrap .request-form-input {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .request-price .request-form .request-form-wrap .request-send-button {
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+    .request-price .request-video-block .video-car {
+        aspect-ratio: 1;
+        border: none;
+    }
+
+    .request-price .request-video-block .video-car::after {
+        width: 109px;
+        height: 109px;
+    }
+
+
+
+
+}
+
+@media (max-width: 767px) {
+    .header .header-menu .header-logo {
+        margin-right: 155px;
+    }
+
+
+
+
+
+
+
+    .popup-form .request-form {
+        flex: 0 0 90%;
+    }
+}
+
+@media (max-width: 575px) {
+    .header .header-menu .header-logo {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 456px) {
+    .header .header-menu .header-logo {
+        margin-right: 40px;
+    }
+
+    .header .header-menu .header-button {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 385px) {
+    .header .header-menu .header-logo {
+        margin-right: 20px;
+    }
+
+    .header .header-menu .header-button {
+        font-size: 12px;
+        padding: 5px;
+        font-weight: 600;
     }
 }
