@@ -291,7 +291,13 @@ section {
     padding: 30px;
 }
 
-.real-cars .cars-tabs .cars-card .options-title {
+/* .real-cars .cars-tabs .cars-card .options-list {
+   
+} */
+
+
+
+.real-cars .cars-tabs .cars-card .options-list .options-title {
     font-weight: 500;
     font-size: 30px;
     line-height: 120%;
@@ -299,19 +305,18 @@ section {
     margin-bottom: 20px;
 }
 
-.real-cars .cars-tabs .cars-card .option-item {
+.real-cars .cars-tabs .cars-card .options-list .option-item {
     display: flex;
-    flex-direction: column;
 }
 
-.real-cars .cars-tabs .cars-card .option-item .option {
+.real-cars .cars-tabs .cars-card .options-list .option-item .option {
     font-weight: 400;
     font-size: 22px;
     line-height: 120%;
     color: #000;
 }
 
-.real-cars .cars-tabs .cars-card .option-item .option-value {
+.real-cars .cars-tabs .cars-card .options-list .option-item .option-value {
     font-weight: 700;
     margin-left: 5px;
 }
@@ -1180,14 +1185,89 @@ section {
     }
 
 
-
-
 }
 
 @media (max-width: 767px) {
     .header .header-menu .header-logo {
         margin-right: 155px;
     }
+
+    .section-banner .banner-lg-text {
+        font-size: 58px;
+    }
+
+    .section-banner .banner-sm-text {
+        font-size: 17px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.yellow {
+        top: -61px;
+        left: 15px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.black {
+        max-width: 242px;
+        padding: 15px;
+        top: -40px;
+        right: 21px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.grey {
+        max-width: 205px;
+        padding: 15px;
+        left: 22px;
+    }
+
+    .block-title {
+        font-size: 48px;
+    }
+
+    .real-cars .cars-tabs .cars-card .options-list {
+        display: flex;
+        flex-flow: wrap;
+        padding-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .real-cars .cars-tabs .cars-card .options-list .title-link {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .real-cars .cars-tabs .cars-card .options-list .option-item {
+        flex: 0 0 50%;
+        margin-bottom: 7px;
+    }
+
+    .real-cars .cars-tabs-buttons .cars-button {
+        font-size: 28px;
+    }
+
+
+    .real-cars .cars-tabs .cars-card .price-wrap {
+        flex-flow: wrap row;
+        justify-content: center;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-price {
+        font-size: 35px;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-price-desc {
+        font-size: 13px;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-about-link .car-about-full,
+    .real-cars .cars-tabs .cars-card .price-wrap .button-car-order {
+        font-size: 18px;
+    }
+
+   
+
+
 
 
 
