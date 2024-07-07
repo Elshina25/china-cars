@@ -47,8 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //добавление отступа только четным видео-элементам
     const videoArray = Array.from(document.querySelectorAll('.video-review'));
     videoArray.forEach((div, i) => {
-        if (i % 2 === 1) {
+        if (i % 2 === 1 && window.innerWidth >= 992) {
             div.style.marginRight = '22px';
+        } if (window.innerWidth <= 991) {
+            div.style.marginRight = '0';
         }
     });
 

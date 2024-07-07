@@ -666,6 +666,10 @@ section {
     padding: 0 0 75px 50px;
 }
 
+.request-price.block-two .sale-stat span {
+    display: none;
+}
+
 .request-price.block-two .sale-stat .stat-number {
     font-weight: 600;
     font-size: 200px;
@@ -1039,7 +1043,7 @@ section {
 
 @media (min-width: 1129px) and (max-width: 1199px) {
     input[type="checkbox"]:checked+label::after {
-        top: 41%;
+        top: 26%;
     }
 }
 
@@ -1265,15 +1269,55 @@ section {
         font-size: 18px;
     }
 
-   
+    .request-price .request-form .request-form-wrap .request-form-header {
+        font-size: 36px;
+    }
+
+    .request-price .request-form .request-form-wrap .request-form-desc {
+        font-size: 20px;
+    }
+
+    .video-reviews .block-description {
+        font-size: 22px;
+    }
+
+    .faq .ask-question-wrap {
+        margin-bottom: 30px;
+    }
+
+    .request-price.block-two .sale-stat {
+        padding: 0;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .request-price.block-two .sale-stat span {
+        display: block;
+        position: absolute;
+        width: 35%;
+        height: 5px;
+        border-radius: 5px;
+        bottom: -13%;
+        right: 161px;
+        z-index: 1;
+        background-color: #232323;
+    }
 
 
+    .request-price.block-two .sale-stat .stat-number {
+        text-align: center;
+        margin-bottom: 0;
+    }
 
+    .request-price.block-two .sale-stat .stat-description {
+        font-size: 31px;
+        width: 100%;
+    }
 
-
-
-
-
+    .footer-contacts .footer-wrap .socials .soc-sign {
+        flex: 0;
+        padding: 42px;
+    }
 
     .popup-form .request-form {
         flex: 0 0 90%;
@@ -1294,6 +1338,12 @@ section {
     .header .header-menu .header-button {
         font-size: 14px;
         padding: 5px;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 991px) {
+    input[type="checkbox"]:checked+label::after {
+        top: 50%;
     }
 }
 
