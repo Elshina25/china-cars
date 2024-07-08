@@ -1043,7 +1043,11 @@ section {
 
 @media (min-width: 1129px) and (max-width: 1199px) {
     input[type="checkbox"]:checked+label::after {
-        top: 26%;
+        top: 22%;
+    }
+
+    .popup-form .request-form .form-wrap input[type="checkbox"]:checked+label::after {
+        top: 41%;
     }
 }
 
@@ -1100,7 +1104,7 @@ section {
         width: 40%;
         background-color: #e1e0e0;
         position: absolute;
-        top: 90%;
+        top: 70%;
         left: 45%;
         margin-right: 0;
         padding: 20px;
@@ -1186,6 +1190,48 @@ section {
     .request-price .request-video-block .video-car::after {
         width: 109px;
         height: 109px;
+    }
+
+    .request-price.block-two .sale-stat {
+        padding: 0;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .request-price.block-two .sale-stat span {
+        display: block;
+        position: absolute;
+        width: 35%;
+        height: 5px;
+        border-radius: 5px;
+        bottom: -13%;
+        right: 161px;
+        z-index: 1;
+        background-color: #232323;
+    }
+
+    .request-price.block-two .sale-stat .stat-number {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .request-price.block-two .sale-stat .stat-description {
+        font-size: 31px;
+        width: 100%;
+    }
+
+
+    #map-container {
+        margin-bottom: 30px;
+    }
+
+    .footer-contacts .footer-wrap .socials {
+        justify-content: space-around;
+    }
+
+    .footer-contacts .footer-wrap .socials .soc-sign {
+        flex: 0;
+        padding: 42px;
     }
 
 
@@ -1285,48 +1331,110 @@ section {
         margin-bottom: 30px;
     }
 
-    .request-price.block-two .sale-stat {
-        padding: 0;
-        position: relative;
-        margin-bottom: 60px;
-    }
-
-    .request-price.block-two .sale-stat span {
-        display: block;
-        position: absolute;
-        width: 35%;
-        height: 5px;
-        border-radius: 5px;
-        bottom: -13%;
-        right: 161px;
-        z-index: 1;
-        background-color: #232323;
-    }
-
-
-    .request-price.block-two .sale-stat .stat-number {
-        text-align: center;
-        margin-bottom: 0;
-    }
-
-    .request-price.block-two .sale-stat .stat-description {
-        font-size: 31px;
-        width: 100%;
-    }
-
-    .footer-contacts .footer-wrap .socials .soc-sign {
-        flex: 0;
-        padding: 42px;
-    }
-
     .popup-form .request-form {
         flex: 0 0 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .popup-form .request-form .form-wrap input[type="checkbox"]:checked+label::after {
+        top: 26%;
     }
 }
 
 @media (max-width: 575px) {
     .header .header-menu .header-logo {
         margin-right: 100px;
+    }
+
+    .header .header-menu .mobile-menu.active {
+        width: 52%;
+    }
+
+    .section-banner .banner-lg-text:nth-child(3) {
+        margin-left: 102px;
+    }
+
+    .section-banner .banner-lg-text {
+        font-size: 45px;
+    }
+
+    .section-banner .banner-lg-text.banner-lg-text.yellow {
+        font-size: 50px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.yellow {
+        top: -51px;
+        left: 8px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-banner .banner-sm-text {
+        font-size: 16px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.black {
+        max-width: 236px;
+        padding: 10px;
+        right: 10px;
+    }
+
+    .section-banner .banner-img .banner-sm-text.grey {
+        max-width: 170px;
+        padding: 10px;
+        left: 11px;
+    }
+
+    .block-title {
+        font-size: 45px;
+    }
+
+    .real-cars .cars-tabs .cars-card .options-list .option-item .option {
+        font-size: 19px;
+    }
+
+    .real-cars .cars-tabs .cars-card .options-list .option-item .option-value {
+        font-size: 21px;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-price-desc {
+        max-width: 55%;
+    }
+
+    .real-cars .cars-tabs .cars-card .price-wrap .car-about-link .car-about-full, 
+    .real-cars .cars-tabs .cars-card .price-wrap .button-car-order {
+        padding: 15px;
+        font-size: 20px;
+
+    }
+
+    .video-reviews .block-description {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .faq .faq-block .faq-item .faq-question {
+        font-size: 16px;
+        padding: 20px 40px 20px 15px;
+    }
+
+    .faq .faq-block .faq-item .faq-question::after {
+        top: 20px;
+    }
+
+    .request-price.block-two .sale-stat .stat-number {
+        font-size: 175px;
+    }
+
+    .request-price.block-two .sale-stat .stat-description {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 570px) {
+    .popup-form .request-form .form-wrap input[type="checkbox"]:checked+label::after {
+        top: 26%;
     }
 }
 
