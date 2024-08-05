@@ -14,6 +14,8 @@ li {
 
 a {
     text-decoration: none;
+    color: #000;
+
 }
 
 img {
@@ -92,69 +94,118 @@ section {
 
 .header {
     padding: 30px 0;
-    max-width: 1069px;
     margin: 0 auto;
 }
 
 .header .header-menu {
     display: flex;
-    justify-content: space-evenly;
-    border-radius: 10px;
-    background-color: #fad14d;
+    justify-content: space-around;
+    border-radius: 40px;
+    background-color: #f7f6f6;
     padding: 10px;
 }
 
+/* .header .header-menu .top-menu {
+
+} */
+
 .header .header-menu .header-logo {
-    margin-right: 265px;
+    align-content: center;
+}
+
+.header .header-menu .top-menu .top-menu-list {
+    display: flex;
+}
+
+.header .header-menu .top-menu .top-menu-item {
+    margin-right: 20px;
+    align-content: center;
+}
+
+.header .header-menu .top-menu .top-menu-item .top-menu-link {
+    color: #000;
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.header .header-menu .top-menu .top-menu-item.catalog-item {
+    border-radius: 100px;
+    background-color: #fad14d;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.header .header-menu .top-menu .top-menu-item.catalog-item a {
+    color: #000;
+    opacity: 1;
+}
+
+.header .header-menu .messengers {
+    display: flex;
+}
+
+.header .header-menu .messengers .top-messengers {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-right: 10px;
+}
+
+
+.header .header-menu .top-phone .telephone a {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header .header-menu .top-phone .time-work {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: end;
 }
 
 .header .header-menu .buter-menu {
     display: none;
 }
 
-.header .header-menu .header-logo {
-    margin-right: 100px;
-    align-content: center;
-}
-
-.header .header-menu .nav-menu {
-    margin-right: 100px;
-    align-content: center;
-}
-
-.header .header-menu .nav-menu .menu-list {
-    display: flex;
-}
-
-.header .header-menu .nav-menu .menu-list .menu-item:nth-child(n+2) {
-    margin-left: 55px;
-}
-
-.header .header-menu .nav-menu .menu-list .menu-item .menu-link {
-    font-weight: 400;
-    font-size: 16px;
-    color: #242526;
-}
-
-.header .header-menu .nav-menu .menu-list .menu-item .menu-link:hover {
-    opacity: 0.6;
-}
-
 .header .header-menu .header-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 120%;
+    font-weight: 400;
+    font-size: 14px;
     color: #000;
     border: 1px solid #000;
     padding: 10px;
-    border-radius: 10px;
-    background-color: #fad14d;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .header .header-menu .header-button:hover {
     color: #fff;
     background-color: #1a1a1a;
+}
+
+.header .nav-menu {
+    align-content: center;
+}
+
+.header .nav-menu .menu-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .nav-menu .menu-list .menu-item:nth-child(n+2) {
+    margin-left: 55px;
+}
+
+.header .nav-menu .menu-list .menu-item .menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #242526;
+    text-transform: uppercase;
+}
+
+.header .nav-menu .menu-list .menu-item .menu-link:hover {
+    opacity: 0.6;
 }
 
 /* end header */
@@ -1428,7 +1479,7 @@ section {
         max-width: 55%;
     }
 
-    .real-cars .cars-tabs .cars-card .price-wrap .car-about-link .car-about-full, 
+    .real-cars .cars-tabs .cars-card .price-wrap .car-about-link .car-about-full,
     .real-cars .cars-tabs .cars-card .price-wrap .button-car-order {
         padding: 15px;
         font-size: 20px;
@@ -1546,7 +1597,8 @@ section {
         padding: 26px;
     }
 
-    .footer-contacts .footer-wrap .footer-phone a, .footer-contacts .footer-wrap .footer-mail a {
+    .footer-contacts .footer-wrap .footer-phone a,
+    .footer-contacts .footer-wrap .footer-mail a {
         font-size: 20px;
     }
 }
