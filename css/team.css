@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.our-team {
+    padding: 50px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.our-team .employee-wrap {
+    border: 1px solid #acacac;
+    border-radius: 20px;
+    padding: 10px 10px 20px;
+    margin-bottom: 30px;
+}
+
+.our-team .employee-wrap .employee-name {
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 20px;
+} 
+
+.our-team .employee-wrap .employee-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #929292;
+}
+
+
