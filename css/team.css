@@ -39,6 +39,22 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     color: #929292;
+    padding: 20px 0;
 }
 
+.our-team .employee-wrap .employee-button {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 120%; */
+    color: #000;
+}
+
+.owl-team {
+    padding-top: 50px;
+    display: none;
+}
 
